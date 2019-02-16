@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1> Hello world </h1>
+    <div class="global-container">
+    <div class="switch-container">
+        <h3> Toutes </h3>
+	<input type="checkbox" name="switch" class="switch-input" id="switch-all" >
+	<span class="switch-decorator">
+	<span class="switch-on"></span>
+	<span class="switch-off"></span>
+	</span>
+    </div>
+    <div class="switch-container">
+    <h3> Rouge </h3>
+	<input type="checkbox" name="switch" class="switch-input" id="switch-led1">
+	<span class="switch-decorator">
+	<span class="switch-on"></span>
+	<span class="switch-off"></span>
+	</span>
+    </div>
+    <div class="switch-container">
+     <h3> Bleue </h3>
+	<input type="checkbox" name="switch" class="switch-input" id="switch-led2">
+	<span class="switch-decorator">
+	<span class="switch-on"></span>
+	<span class="switch-off"></span>
+	</span>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

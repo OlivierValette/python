@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma');
+
+html, body {
+  background-color: #000;
+  box-sizing: content-box;
+  padding: 20px;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #dad070;
+  margin: 0;
+}

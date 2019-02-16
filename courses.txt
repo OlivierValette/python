@@ -1,0 +1,9 @@
+Liste de courses :
+- 5 Pommes
+- 7 Poires
+- 22 Pommes
+- 76 Poires
+- 5 Pommes
+- 7 Poires
+- 34 Pommes
+- 66 Poires

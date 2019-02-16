@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sonde T°</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='styletemp.css')}}">
+</head>
+<body>
+    <h1> Sonde de température </h1>
+	{% if tc < 15 %}
+  		<h5>Il fait froid : {{ tc }}°C !</h5>
+                <img src="https://media.giphy.com/media/2noiRecKFWco/giphy.gif">
+	{% elif tc < 30 %}
+  		<h5>Température agréable de : {{ tc }}°C !</h5>
+	{% else %}
+  		<h5 class="hot">Il fait trop chaud : {{ tc }}°C !</h5>
+		<img src="https://media.giphy.com/media/5PDpiNMsIEr4s/giphy.gif">
+	{% endif %}
+
+    <div class="thermometer">
+      <div class="ring">
+        <div class="dial-bottom"></div>
+      </div>
+      <div class="temperatureContainer">
+        <div class="pointer central"></div>
+{#        <div class="pointer basking"></div>#}
+        <div class="title central">
+          °C
+        </div>
+        <div class="temperature central">
+          {{ tc }}<span class="degree">&deg;</span>
+        </div>
+        <div class="title basking">
+          °F
+        </div>
+        <div class="temperature basking">
+          {{ tf }}<span class="degree">&deg;</span>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1> Hello world </h1>
+	<h3><a href="http://192.168.2.14:5000/led">LEDS</a></h3>
+	<h3><a href="http://192.168.2.14:5000/temperature">SONDE T°</a></h3>
+	<h3><a href="http://192.168.2.14:5000/mouvement">DETECTEUR DE MOUVEMENT</a></h3>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
